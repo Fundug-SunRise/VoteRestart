@@ -1,0 +1,7 @@
+name: VoteRestart
+version: '1.0-SNAPSHOT'
+main: org.Fundug.voteRestart.VoteRestart
+api-version: '1.20'
+commands:
+  voterestart:
+    permission: voterestart.reload
