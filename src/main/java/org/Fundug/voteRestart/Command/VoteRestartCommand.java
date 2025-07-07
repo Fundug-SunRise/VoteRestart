@@ -29,7 +29,7 @@ public class VoteRestartCommand extends AbstractCommand{
             sender.sendMessage(ChatColor.BLUE + "Reload plugin: " + s + " reload\nStart vote for restart: " + s + " vote");
         }
 
-        if(strings[1].equalsIgnoreCase("reload")){
+        if(strings[0].equalsIgnoreCase("reload")){
 
             if (!sender.hasPermission("voterestart.start")) {
                 sender.sendMessage(ChatColor.RED + "You don't have permission to start votes!");
@@ -52,7 +52,6 @@ public class VoteRestartCommand extends AbstractCommand{
                     sender.sendMessage(ChatColor.RED + "Only players can start voting!");
                     return;
                 }
-
 
 
                 if (isVotingActive) {
